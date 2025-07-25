@@ -4,3 +4,14 @@
   background-size: cover;
   background-position: center;
 }
+.logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1a2332;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+.logo-text {
+  font-size: 1.25rem;
+}
