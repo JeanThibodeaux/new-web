@@ -1,0 +1,1019 @@
+<div class="about-image">
+                    <img src="" alt="Miguel Costales Portilla" style="width:100%;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.25)">
+</div><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Costales Portilla - Abogado Especialista | Valladolid</title>
+    <meta name="description" content="Más de 30 años de experiencia en Derecho Civil, Laboral y Mercantil. Ex-Socio Garrigues. Reconocido por Best Lawyers.">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --navy: #1a2332;
+            --navy-light: #2a3441;
+            --gray: #6b7280;
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+            --gold: #d4af37;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 35, 50, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 300;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+        
+        .mobile-menu {
+            display: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(26, 35, 50, 0.8), rgba(26, 35, 50, 0.8)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f3f4f6" width="1200" height="600"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%236b7280" font-family="Playfair Display" font-size="24">Abogado en Valladolid - Despacho Profesional</text></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--gold);
+            color: var(--navy);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Secciones */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--navy);
+        }
+        
+        /* Sobre Mí */
+        .about {
+            background: var(--light-gray);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .about-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--gold);
+        }
+        
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--navy);
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--gray);
+        }
+        
+        /* Áreas de Práctica */
+        .practice-areas {
+            background: var(--white);
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .area-card {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: var(--navy);
+            color: var(--white);
+        }
+        
+        .area-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .area-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        /* Timeline */
+        .timeline {
+            background: var(--light-gray);
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gold);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 45%;
+            position: relative;
+        }
+        
+        .timeline-date {
+            background: var(--gold);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        /* Formación */
+        .education {
+            background: var(--white);
+        }
+        
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .education-item {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--gold);
+        }
+        
+        .education-item h4 {
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Reconocimientos */
+        .awards {
+            background: var(--light-gray);
+            text-align: center;
+        }
+        
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .award-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .award-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        /* Contacto */
+        .contact {
+            background: var(--navy);
+            color: var(--white);
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item i {
+            color: var(--gold);
+            margin-right: 1rem;
+            width: 20px;
+        }
+        
+        .contact-form {
+            background: var(--navy-light);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--gray);
+            border-radius: 5px;
+            background: var(--white);
+            color: var(--navy);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .submit-btn {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--navy-light);
+        }
+        
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                flex-direction: column !important;
+                padding-left: 50px;
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">Miguel Costales Portilla</a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Perfil</a></li>
+                <li><a href="#practice-areas">Servicios</a></li>
+                <li><a href="#timeline">Trayectoria</a></li>
+                <li><a href="#education">Formación</a></li>
+                <li><a href="#awards">Reconocimientos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Miguel Costales Portilla</h1>
+                <p>Abogado especialista en Derecho Civil, Laboral y Mercantil</p>
+                <p>Más de 30 años de experiencia asesorando a clientes nacionales e internacionales en litigios, compliance y derecho corporativo. Socio senior en Garrigues y reconocido por Best Lawyers.</p>
+                <a href="#contact" class="cta-button">Haga clic aquí para ponerse en contacto conmigo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Perfil Profesional</h2>
+            <div class="about-content">
+                <div class="about-image">
+  <img src="https://i.imgur.com/sLFaJ0I.jpeg"
+       alt="Miguel Costales Portilla"
+       style="width:100%;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.25)">
+</div>
+                <div class="about-text">
+                    <h3>Trayectoria Resumida</h3>
+                    <p>Abogado colegiado en Valladolid con amplia experiencia en derecho civil, laboral, mercantil y litigios. Ex-Socio del Departamento Procesal de Garrigues (1997-2024) y actual profesional independiente.</p>
+                    
+                    <h3>Logros Clave</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><i class="fas fa-star" style="color: var(--gold); margin-right: 0.5rem;"></i> Reconocido por Best Lawyers</li>
+                        <li><i class="fas fa-graduation-cap" style="color: var(--gold); margin-right: 0.5rem;"></i> Citado por la Universidad Europea Miguel de Cervantes (UEMC) como experto en litigios</li>
+                        <li><i class="fas fa-chalkboard-teacher" style="color: var(--gold); margin-right: 0.5rem;"></i> Profesor en prestigiosas instituciones (MBA CEU, Cámara de Comercio de Valladolid, UVA)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Práctica -->
+    <section id="practice-areas" class="practice-areas">
+        <div class="container">
+            <h2 class="section-title">Áreas de Práctica</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Derecho Civil</h3>
+                    <p>Litigios, contratos, derecho de familia y responsabilidad civil.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Derecho Laboral</h3>
+                    <p>Conflictos laborales, despidos, negociación colectiva y derechos laborales.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Derecho Corporativo</h3>
+                    <p>Sociedades mercantiles, compliance corporativo e insolvencias empresariales.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Litigios y Arbitraje</h3>
+                    <p>Procesos judiciales, arbitraje comercial y mediación en conflictos.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Protección de Datos</h3>
+                    <p>GDPR, responsabilidad penal de empresas y compliance regulatorio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trayectoria -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">Trayectoria Profesional</h2>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Actualidad</div>
+                    <h3>Abogado Independiente</h3>
+                    <p>Despacho propio en Valladolid, ofreciendo servicios especializados en derecho civil, laboral y mercantil.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2008 - 2024</div>
+                    <h3>Socio en Garrigues</h3>
+                    <p>Socio del Departamento Procesal, liderando equipos en litigios complejos de ámbito nacional e internacional.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">1997 - 2008</div>
+                    <h3>Asociado en Garrigues</h3>
+                    <p>Especialización en derecho procesal y litigios civiles, mercantiles y laborales.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">1993 - 1997</div>
+                    <h3>Bufete Berbel</h3>
+                    <p>Inicio de la carrera profesional en derecho civil y mercantil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formación -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h4>Licenciatura en Derecho</h4>
+                    <p>Universidad de Valladolid (1986-1991)</p>
+                </div>
+                <div class="education-item">
+                    <h4>Máster en Asesoría Jurídica</h4>
+                    <p>IE Law School</p>
+                </div>
+                <div class="education-item">
+                    <h4>MBA Internacional</h4>
+                    <p>thePower (2020-2021)</p>
+                </div>
+                <div class="education-item">
+                    <h4>Delegado de Protección de Datos</h4>
+                    <p>Centro Garrigues</p>
+                </div>
+                <div class="education-item">
+                    <h4>Corporate Compliance</h4>
+                    <p>Curso intensivo (2023)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reconocimientos -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">Reconocimientos</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best Lawyers</h3>
+                    <p>Reconocido en Derecho Civil, Mercantil y Laboral</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Sentencia SAP 279/2005</h3>
+                    <p>Citado en Audiencia Provincial de Valladolid</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Directorios Legales</h3>
+                    <p>Legalia, guialegal.info, abogados.top</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Plaza Rinconada nº 9, 1º, 47001 Valladolid</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+34 983 361 475</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@miguelcostales.es</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lunes a Viernes: 9:00 - 19:00</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Formulario de Contacto</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Nombre completo *</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Asunto</label>
+                            <input type="text" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje *</label>
+                            <textarea name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Miguel Costales Portilla. Todos los derechos reservados.</p>
+            <p>Abogado colegiado en Valladolid | Diseñado con tecnología moderna y seguridad SSL</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por su mensaje. Nos pondremos en contacto a la brevedad.');
+            this.reset();
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(26, 35, 50, 0.98)';
+            } else {
+                header.style.background = 'rgba(26, 35, 50, 0.95)';
+            }
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.area-card, .timeline-content, .education-item, .award-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Miguel Costales</title>
+  <style>
+    body{margin:0;font-family:Roboto,Arial;background:#f3f4f6}
+    #chatbot{position:fixed;bottom:20px;right:20px;z-index:9999}
+    #btnChat{width:60px;height:60px;border-radius:50%;background:#1a2332;color:#fff;border:none;font-size:24px;cursor:pointer}
+    #window{display:none;flex-direction:column;width:360px;height:500px;background:#fff;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+    #header{background:#1a2332;color:#fff;padding:.75rem;font-size:.9rem;border-radius:8px 8px 0 0}
+    #body{flex:1;padding:.5rem;overflow-y:auto;font-size:.85rem}
+    #input{width:100%;border:none;padding:.5rem;border-top:1px solid #ccc}
+    .msg{margin:.25rem 0;padding:.5rem;border-radius:6px;max-width:85%}
+    .user{background:#d4af37;color:#fff;align-self:flex-end}
+    .bot{background:#fff;color:#222;align-self:flex-start}
+    .gdpr{font-size:.65rem;color:#555;padding:.25rem .5rem;background:#fff}
+    .option{margin:.25rem .5rem;padding:.4rem;background:#eef;border-radius:4px;cursor:pointer}
+    .option:hover{background:#dde}
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Completo – Miguel Costales Portilla</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --navy:#1a2332;
+      --gold:#d4af37;
+      --grey:#f3f4f6;
+    }
+    body{margin:0;font-family:Roboto,Arial,Helvetica,sans-serif;background:var(--grey)}
+    #chatbot{position:fixed;bottom:20px;right:20px;z-index:9999}
+    #launcher{width:60px;height:60px;border-radius:50%;background:var(--navy);color:#fff;border:none;font-size:24px;cursor:pointer;transition:.3s}
+    #launcher:hover{transform:scale(1.1)}
+    #window{
+      position:fixed;bottom:90px;right:20px;
+      width:380px;max-width:90vw;height:600px;
+      background:#fff;border-radius:12px;box-shadow:0 15px 40px rgba(0,0,0,.25);
+      display:none;flex-direction:column;overflow:hidden
+    }
+    #header{
+      background:var(--navy);color:#fff;padding:.75rem 1rem;
+      font-size:1rem;display:flex;justify-content:space-between;align-items:center
+    }
+    #close{cursor:pointer;font-size:20px}
+    #body{flex:1;padding:.5rem;overflow-y:auto;font-size:.9rem;line-height:1.4}
+    #input{
+      width:100%;border:none;border-top:1px solid #ccc;
+      padding:.75rem 1rem;font-size:.9rem;outline:none
+    }
+    .msg{margin:.25rem 0;padding:.6rem;border-radius:10px;max-width:85%;word-wrap:break-word}
+    .user{background:var(--gold);color:#fff;margin-left:auto}
+    .bot{background:var(--grey);color:#222}
+    .gdpr{font-size:.65rem;color:#555;background:#fff;padding:.5rem;text-align:center}
+    .option{
+      margin:.3rem 0;padding:.5rem .75rem;background:#eef;border-radius:8px;
+      cursor:pointer;font-size:.85rem;transition:.2s
+    }
+    .option:hover{background:#dde}
+    .section-title{font-weight:700;margin:.5rem 0 .25rem;color:var(--navy)}
+    @media(max-width:480px){
+      #window{bottom:0;right:0;width:100%;height:100%;border-radius:0}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot">
+  <button id="launcher" title="Abrir chat">💬</button>
+  <div id="window">
+    <div id="header">
+      <span>Miguel Costales – Asistente Virtual</span>
+      <span id="close" title="Cerrar">✕</span>
+    </div>
+    <div class="gdpr">Los datos se tratan conforme al Reglamento UE 2016/679.</div>
+    <div id="body"></div>
+    <input id="input" placeholder="Escriba su consulta o pulse sobre una opción…">
+  </div>
+</div>
+
+<script>
+/* ----------  CONFIGURACIÓN DE PREGUNTAS / RESPUESTAS ---------- */
+const knowledge = {
+  "Información personal y trayectoria": [
+    {q:"¿Quién es Miguel Costales Portilla?",a:"Miguel Costales Portilla es un abogado colegiado en Valladolid (España) con más de 30 años de experiencia en derecho civil, laboral, mercantil y litigios. Ha sido socio en Garrigues y actualmente ejerce como profesional independiente, destacando en procedimientos judiciales, arbitrajes y asesoría corporativa."},
+    {q:"¿Dónde se encuentra su despacho?",a:"📍 Plaza Rinconada nº 9, 1.º, 47001 Valladolid\n📞 Teléfono: +34 983 361 475"},
+    {q:"¿Dónde se colegió Miguel Costales Portilla?",a:"Colegiado en Valladolid (España). Número de colegiado disponible bajo solicitud directa por privacidad profesional."},
+    {q:"¿Cuántos años de experiencia tiene?",a:"Más de 30 años de experiencia (desde 1993), incluyendo 26 años en el bufete Garrigues como socio y asociado senior."},
+    {q:"¿Ha sido profesor en alguna universidad?",a:"Sí, he impartido clases en:\n• Universidad de Valladolid (UVA) (Derecho de Sociedades, 1995-2005).\n• MBA San Pablo CEU (Responsabilidad de Administradores, 2008-2019).\n• Cámara de Comercio de Valladolid (Asesoría Jurídica de Empresas, 2001-2005)."}
+  ],
+  "Áreas de especialización": [
+    {q:"¿En qué áreas del derecho se especializa?",a:"Mis principales áreas de expertise son:\n• Derecho Civil (contratos, litigios, responsabilidad).\n• Derecho Laboral (despidos, conflictos empresariales).\n• Derecho Corporativo/Mercantil (sociedades, fusiones, compliance).\n• Litigios y Arbitrajes (nacionales e internacionales).\n• Protección de Datos y Compliance Penal (RGPD, investigaciones internas)."},
+    {q:"¿Tiene experiencia en insolvencias y reestructuraciones?",a:"Sí, cuento con amplia experiencia en derecho concursal, reestructuración de deudas y gestión de insolvencias, habiendo asesorado a empresas en procesos complejos durante mi etapa en Garrigues y como profesional independiente."},
+    {q:"¿Puede ayudarme con un despido laboral?",a:"Sí, soy experto en Derecho Laboral. Analizo la legalidad del despido, negociación de indemnizaciones y recursos ante tribunales."},
+    {q:"¿Hace reclamaciones por daños y perjuicios?",a:"Sí, en Derecho Civil gestiono reclamaciones por responsabilidad contractual o extracontractual (accidentes, incumplimientos, etc.)."},
+    {q:"¿Asesora en creación de empresas?",a:"Absolutamente. Ofrezco:\n• Constitución de Sociedades Limitadas (SL) o Sociedades Anónimas (SA).\n• Redacción de estatutos y contratos mercantiles.\n• Asesoramiento en compliance corporativo (evitar riesgos penales)."},
+    {q:"¿Tiene experiencia en litigios internacionales?",a:"Sí, he gestionado casos con elementos transfronterizos, especialmente en Derecho Mercantil Internacional y arbitrajes."},
+    {q:"¿Qué es el compliance penal y cómo puede ayudarme?",a:"Es un sistema para prevenir delitos en empresas (fraude, corrupción, blanqueo). Diseño protocolos personalizados para evitar responsabilidades penales de la empresa y sus administradores."}
+  ],
+  "Trayectoria profesional": [
+    {q:"¿Qué experiencia tiene en bufetes importantes?",a:"• Socio en Garrigues (2008-2024), liderando el área procesal.\n• Asociado en Garrigues (1997-2008), especializado en litigios mercantiles.\n• Profesor en múltiples instituciones (UVA, CEU, Cámara de Comercio) en derecho societario y civil."},
+    {q:"¿Ha recibido algún reconocimiento?",a:"• Citado por la Universidad Europea Miguel de Cervantes (UEMC) como experto en litigios.\n• Perfil destacado en directorios como Best Lawyers, Legalia y guialegal.info.\n• Mención en la Sentencia SAP 279/2005 de la Audiencia Provincial de Valladolid."}
+  ],
+  "Servicios y trámites": [
+    {q:"¿Ofrece consultas iniciales gratuitas?",a:"Las consultas iniciales se evalúan caso por caso. Para agendar una cita, puede contactarme vía:\n✉️ Email: info@miguelcostales.es\n📞 Teléfono: +34 983 361 475"},
+    {q:"¿Atiende casos internacionales?",a:"Sí, tengo experiencia en derecho internacional y he asesorado a clientes extranjeros en litigios transfronterizos, compliance y contratos mercantiles. Domino inglés jurídico (B2 Business Vantage, Cambridge)."},
+    {q:"¿Cómo inicio un proceso legal con usted?",a:"1. Contacto inicial (vía teléfono/email).\n2. Análisis de documentos (sin compromiso).\n3. Propuesta de honorarios (transparente y por escrito).\n4. Firma de encargo profesional (si procede)."},
+    {q:"¿Trabaja con empresas extranjeras?",a:"Sí, especialmente en:\n• Inversiones en España.\n• Conflictos societarios con socios internacionales.\n• Cumplimiento de RGPD (Protección de Datos) para multinacionales."},
+    {q:"¿Ofrece servicios de Delegado de Protección de Datos (DPO)?",a:"Sí, estoy certificado por el Centro de Estudios Garrigues (2023) y puedo actuar como DPO externo para su empresa, asegurando el cumplimiento del RGPD."},
+    {q:"¿Realiza trámites en el Registro Mercantil?",a:"Sí, gestiono:\n• Inscripción de empresas.\n• Modificaciones estatutarias.\n• Nombramiento/cese de administradores."}
+  ],
+  "Honorarios y costes": [
+    {q:"¿Cuáles son sus honorarios?",a:"Varían según la complejidad del caso. Trabajo con:\n• Tarifa por horas (para asesorías puntuales).\n• Honorarios fijos (para procedimientos predecibles).\n• Presupuesto personalizado (tras evaluar su caso)."},
+    {q:"¿Acepta pagos a plazos?",a:"En casos seleccionados, sí. Analizamos flexibilidad según sus necesidades."},
+    {q:"¿Ofrece servicios pro bono?",a:"Evaluamos solicitudes pro bono en casos de especial relevancia social o para entidades sin ánimo de lucro."}
+  ],
+  "Idiomas y clientes internacionales": [
+    {q:"¿Habla inglés?",a:"Sí, tengo nivel B2 Business (Cambridge) y experiencia en asesoramiento jurídico en inglés."},
+    {q:"¿Puede redactar contratos en inglés?",a:"Sí, especialmente en áreas como:\n• Contratos mercantiles internacionales.\n• Acuerdos de confidencialidad (NDAs).\n• Compliance para multinacionales."}
+  ],
+  "Recursos y formación": [
+    {q:"¿Da charlas o talleres para empresas?",a:"Sí, imparto formación en:\n• Prevención de riesgos penales en empresas (Compliance).\n• Actualizaciones en Derecho Mercantil.\n• Protección de datos (RGPD)."},
+    {q:"¿Dónde puedo encontrar sus publicaciones?",a:"En mi perfil de LinkedIn y en artículos para revistas jurídicas. Próximamente también en el blog de esta web."}
+  ],
+  "Verificación y transparencia": [
+    {q:"¿Cómo verifico su colegiación?",a:"Puede consultar mi colegiación en el Ilustre Colegio de Abogados de Valladolid (ICAVA) o solicitarme el número directamente."},
+    {q:"¿Tiene clientes que puedan dar referencias?",a:"Por confidencialidad, no comparto datos de clientes, pero figuro en directorios como Best Lawyers y Legalia como profesional reconocido."}
+  ]
+};
+
+/* ----------  LÓGICA DEL CHATBOT ---------- */
+const launcher = document.getElementById('launcher');
+const win      = document.getElementById('window');
+const closeBtn = document.getElementById('close');
+const body     = document.getElementById('body');
+const input    = document.getElementById('input');
+
+let sessionId = Math.random().toString(36).substr(2, 9);
+
+launcher.addEventListener('click', ()=>{
+  win.style.display = 'flex';
+  launcher.style.display = 'none';
+  if(!body.hasChildNodes()) showMainMenu();
+});
+closeBtn.addEventListener('click', ()=>{
+  win.style.display = 'none';
+  launcher.style.display = 'block';
+});
+
+function showMainMenu(){
+  body.innerHTML = `<div class="bot msg">Hola, soy el asistente virtual de Miguel Costales. Elija un tema para ver las preguntas disponibles:</div>`;
+  Object.keys(knowledge).forEach(cat=>{
+    const btn = document.createElement('div');
+    btn.className = 'option';
+    btn.textContent = cat;
+    btn.onclick = ()=>showQuestions(cat);
+    body.appendChild(btn);
+  });
+}
+
+function showQuestions(category){
+  body.innerHTML = `<div class="bot msg"><strong>${category}</strong></div>`;
+  knowledge[category].forEach((item, idx)=>{
+    const btn = document.createElement('div');
+    btn.className = 'option';
+    btn.textContent = item.q;
+    btn.onclick = ()=>showAnswer(item);
+    body.appendChild(btn);
+  });
+  backButton();
+}
+
+function showAnswer(item){
+  addMsg(item.q, 'user');
+  setTimeout(()=>addMsg(item.a, 'bot'), 300);
+  backButton();
+}
+
+function backButton(){
+  const back = document.createElement('div');
+  back.className = 'option';
+  back.textContent = '⬅ Volver al menú principal';
+  back.onclick = showMainMenu;
+  body.appendChild(back);
+}
+
+function addMsg(text, who){
+  const div = document.createElement('div');
+  div.className = `msg ${who}`;
+  div.innerHTML = text.replace(/\n/g,'<br>');
+  body.appendChild(div);
+  body.scrollTop = body.scrollHeight;
+}
+
+/* ----------  BÚSQUEDA LIBRE ---------- */
+input.addEventListener('keydown', e=>{
+  if(e.key==='Enter'){
+    const txt = input.value.trim().toLowerCase();
+    input.value='';
+    if(!txt) return;
+    addMsg(txt, 'user');
+    // búsqueda fuzzy
+    let best=null;
+    for(const cat in knowledge){
+      knowledge[cat].forEach(item=>{
+        if(item.q.toLowerCase().includes(txt) || item.a.toLowerCase().includes(txt)){
+          best=item;
+        }
+      });
+    }
+    setTimeout(()=>{
+      if(best){showAnswer(best);}
+      else{addMsg('No encuentro una respuesta exacta. Por favor, seleccione un tema del menú o reformule la pregunta.', 'bot');}
+    },300);
+  }
+});
+</script>
+ <script>
+/* ===== BOTÓN MINIMIZAR ABAJO ===== */
+(function () {
+  const chatInput = document.getElementById('chatInput');
+  const chatWindow = document.getElementById('chatWindow');
+  const launcher = document.getElementById('launcher');
+
+  const btn = document.createElement('button');
+  btn.textContent = 'Minimizar';
+  btn.style.width = '100%';
+  btn.style.padding = '0.6rem';
+  btn.style.border = 'none';
+  btn.style.background = '#1a2332';
+  btn.style.color = '#fff';
+  btn.style.cursor = 'pointer';
+  btn.style.fontSize = '0.9rem';
+
+  btn.addEventListener('click', () => {
+    chatWindow.style.display = 'none';
+    launcher.style.display = 'block';
+  });
+
+  // Insertamos justo después del input
+  chatInput.insertAdjacentElement('afterend', btn);
+})();
+</script>
+</body>
+</html>
+ 

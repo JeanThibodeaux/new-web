@@ -1,0 +1,6 @@
+.hero {
+  background: linear-gradient(rgba(26, 35, 50, 0.65), rgba(26, 35, 50, 0.65)),
+              url('https://i.imgur.com/sLFaJ0I.jpeg');
+  background-size: cover;
+  background-position: center;
+}
